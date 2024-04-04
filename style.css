@@ -9,3 +9,7 @@ body {
     font-style: italic;
     color: rgb(55, 8, 197);
   }
+
+  #nextButton {
+    visibility: hidden;
+  }
