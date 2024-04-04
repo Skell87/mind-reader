@@ -9,6 +9,7 @@ function init(){
 
 
 let currentState = 0
+drawScreen()
 // if (currentState == 0){
 // document.getElementById('nextButton').style.visibility="hidden";
 // }
@@ -18,8 +19,9 @@ let currentState = 0
 
 function drawScreen(){
   if (currentState === 0){
-    document.getElementById('topTextBox').textContent="I can read your mind.";
+    document.getElementById('topTextBox').textContent="I can read your mind...";
     document.getElementById('nextButton').style.visibility="hidden";
+    document.getElementById('bottomTextBox').textContent="";
   }
   else if (currentState === 1){
     document.getElementById('topTextBox').textContent="Pick a number from 01 - 99";
@@ -37,7 +39,7 @@ function drawScreen(){
     document.getElementById('bottomTextBox').textContent="Ex: 14 - 5 = 9, click next to proceed"
   }
   else if(currentState === 4){
-    document.getElementById('topTextBox').textContent="ADD NUMBER/PICTURE TABLE";
+    document.getElementById('topTextBox').textContent="";
     document.getElementById('nextButton').style.visibility="visible";
     document.getElementById('bottomTextBox').textContent="find your new number. Note the symbol beside the number"
   }
