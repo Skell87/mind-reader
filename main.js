@@ -63,11 +63,19 @@ const nextButton = document.getElementById('nextButton');
 nextButton.addEventListener('click', onNextClick);
 
 // this is the GO/.
-function onGoClick(){
+function onGoClick(){   
   // alert("GoReset button clicked");
+  if (currentState == 0){
   currentState++;
   drawScreen();
+}
+  else {
+    currentState = 0;
+    drawScreen()
+  }
 }
 
 const lowerButton = document.getElementById('goButton');
 lowerButton.addEventListener('click', onGoClick);
+
+// this is the reset button.
