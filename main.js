@@ -59,7 +59,7 @@ function drawScreen(){
     list.id="symbolsList"
     
 
-    let ttb = document.getElementById('appBody');
+    let ttb = document.getElementById('topTextBox');
     
     function addItems(character, parent){
       let li = document.createElement("li")
