@@ -1,9 +1,13 @@
 /* CSS files add styling rules to your content */
 
-html, body {
+body {
+    display: flex;
+    flex-direction: column;
     height: 100vh;
     width: 100vw;
     text-align: center;
+    align-items: center;
+    justify-content: start;
   }
   
 
@@ -21,6 +25,8 @@ html, body {
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 20px;
+    min-height: 60vh;
+    
     
   }
 
@@ -69,9 +75,10 @@ html, body {
 
  .listFunc{
   overflow-y: scroll;
-  height: 100px;
-  width: 50px;
+  height: 380px;
+  width: 100px;
   list-style-type: decimal;
+  align-items: center;
  }
 
 

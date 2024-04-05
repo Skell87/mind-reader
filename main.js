@@ -56,6 +56,7 @@ function drawScreen(){
     
     let list = document.createElement("ul");
     list.classList.add("listFunc");
+    list.id="symbolsList"
     
 
     let ttb = document.getElementById('appBody');
@@ -80,18 +81,17 @@ function drawScreen(){
     }
     console.log(list)
     ttb.appendChild(list)
-
-
-
-    
-  
   }
+
   else if(currentState === 5){
-    document.getElementById('topTextBox').textContent="REVEAL THE CORRECT PIC";
+    document.getElementById('topTextBox').textContent="Your symbol is... \"?\" ";
     document.getElementById('nextButton').style.visibility="hidden";
     document.getElementById('bottomTextBox').textContent="Your symbol is: ";
     document.getElementById('goButton').textContent="return";
-    
+    let ttb = document.getElementById('symbolsList');
+    ttb.remove();
+    console.log(ttb);
+
   }
 
 }
