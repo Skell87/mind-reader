@@ -1,11 +1,95 @@
 /* CSS files add styling rules to your content */
 
 body {
-    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    align-items: center;
+    justify-content: start;
   }
   
-  h1 {
-    font-style: italic;
-    color: pink;
+
+  /* #nextButton {
+    visibility: hidden;
+  } */
+
+  #topTextBox{
+    justify-content: center;
+    width: 200px;
+    background-color: white;
+    font-family: montserrat;
+    font-size: 2.5em;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    min-height: 60vh;
+    
+  }
+
+  #nextButtonChild{
+    background-color: white;
+    
+  }
+  #nextButton{
+    background-color: #8BD8E2;
+    color: white;
+    height: 50px;
+    width: 150px;
+    box-shadow: 10px;
+    border-width: 1px;
+    
+  }
+
+  #bottomTextBox{
+    background-color: white;
+    font-family: roboto;
+    font-size: 1.25em;
+    text-align: center;
+    color: #8BD8E2;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  #bottomGoReturnButtonChild{
+   
+   padding-left: 72%;
+    padding-bottom: 20px;
+  }
+
+  #goButton{
+    border-radius: 100%;
+    width: 75px;
+    height:75px;
+    background-color: white;
+    color:#8BD8E2;
+    
+  }
+
+ #bottomBox{
+  border: #8BD8E2;
+ }
+
+ .listFunc{
+  overflow-y: scroll;
+  height: 380px;
+  align-self: center;
+  list-style-type: decimal;
+  align-items: center;
+  padding-left: 90px;
+  padding-right: 20px;
+ }
+
+
+  @font-face {
+    font-family: montserrat;
+    src: url(assets/Montserrat-VariableFont_wght.ttf);
+  }
+
+  @font-face {
+    font-family: roboto;
+    src: url(assets/Roboto-Bold.ttf);
   }
